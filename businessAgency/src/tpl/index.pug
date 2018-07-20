@@ -1,0 +1,29 @@
+doctype html
+html(lang='en')
+    head
+        title Pug Template
+        link(rel='stylesheet' href='./css/style.min.css')
+
+    body
+        h1 This is Pug templater
+        p Lorem lorem lorem
+
+        label
+            input(
+                type='checkbox'
+                name='agreement'
+                checked
+            )
+            | Are you wrong?
+
+        - var links = ['Home', 'Price', 'About', 'Contacts'];
+        ul
+            each link in links
+                li.list__item
+                    a.list__link(href='#'+link.toLowerCase())=link
+
+        - var i=1;
+        select
+            while i <= 60
+                option=i++
+
