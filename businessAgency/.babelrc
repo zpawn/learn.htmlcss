@@ -1,0 +1,10 @@
+{
+  "presets": ["latest"],
+  "plugins": [
+    "transform-export-extensions",
+    "syntax-dynamic-import",
+    "transform-class-properties",
+    "transform-object-rest-spread",
+    "transform-exponentiation-operator"
+  ]
+}
