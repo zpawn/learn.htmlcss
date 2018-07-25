@@ -7,7 +7,7 @@ const gulp = require('gulp'),
         .argv,
 
     config = {
-        src: './src/tpl/index.pug',
+        src: './src/tpl/*.pug',
         dest: './build/.',
         pug: {},
         plumber: {
