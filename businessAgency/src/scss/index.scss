@@ -1,7 +1,18 @@
 @import './components/sprite';
 
 /** global styles */
-body {
-  background: yellowgreen;
-  color: #fff;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+hr {
+  margin: 20px 0;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
 }
