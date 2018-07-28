@@ -2,6 +2,10 @@ const gulp = require('gulp'),
     spritesmith = require('gulp.spritesmith'),
 
     config = {
+        images: {
+            src: './src/images/**/*.*',
+            dest: 'build/images'
+        },
         sprite: {
             imgName: 'sprite.png',
             cssName: '_sprite.scss',
@@ -13,8 +17,8 @@ const gulp = require('gulp'),
 ////
 
 gulp.task('images', () => {
-    return gulp.src('./src/images/**/*.*')
-        .pipe(gulp.dest('build/images'));
+    return gulp.src(config.images.src)
+        .pipe(gulp.dest(config.images.dest));
 });
 
 gulp.task('sprite', (cb) => {
@@ -23,6 +27,6 @@ gulp.task('sprite', (cb) => {
         .pipe(spritesmith(config.sprite));
 
     spriteData.img.pipe(gulp.dest('./build/images/'));
-    spriteData.css.pipe(gulp.dest('./src/scss/components/'));
+    spriteData.css.pipe(gulp.dest('./src/scss/global/'));
     cb();
 });
