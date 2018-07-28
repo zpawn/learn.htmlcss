@@ -1,18 +1,14 @@
-@import './components/sprite';
+/** Dependencies */
+@import '../../node_modules/font-awesome/scss/font-awesome';
+@import '../../node_modules/normalize.scss/normalize';
 
-/** global styles */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: sans-serif;
-}
+/** Project */
+@import './global/variables';
+@import './global/fonsts';
+@import './global/mixins';
+@import './global/base';
+@import './global/common';
+@import './global/button';
+@import './global/sprite';
 
-hr {
-  margin: 20px 0;
-}
-
-label {
-  display: block;
-  margin-bottom: 10px;
-}
+@import './components/header/header';

@@ -1,0 +1,39 @@
+.header {
+  .nav {
+    display: inline-block;
+    vertical-align: top;
+    padding-top: 7px;
+    margin-right: 15px;
+
+    &__link {
+      display: inline-block;
+      vertical-align: top;
+      padding: 10px;
+      font-family: $font-family-bold;
+      color: $gray-darkest;
+      text-decoration: none;
+      text-transform: capitalize;
+      transition: .3s;
+
+      &:hover,
+      &--active {
+        color: $red;
+      }
+
+      &:after {
+        content: '';
+        display: inline-block;
+        width: 5px;
+        height: 5px;
+        margin-left: 15px;
+        border-radius: 50%;
+        vertical-align: middle;
+        background-color: $gray-darkest;
+      }
+
+      &:last-child:after {
+        display: none;
+      }
+    }
+  }
+}

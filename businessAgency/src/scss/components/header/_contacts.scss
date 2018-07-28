@@ -1,0 +1,49 @@
+.header {
+  .contacts {
+    display: flex;
+    justify-content: flex-end;
+
+    &__item {
+      display: flex;
+      align-items: flex-end;
+    }
+  }
+
+  .contact {
+    display: inline-block;
+    padding: 10px 10px 8px;
+    color: $link-color;
+    text-decoration: none;
+    transition: .3s;
+
+    &:hover {
+      color: lighten($link-color, 20%);
+    }
+
+    &__icon {
+      margin-right: 7px;
+      font-size: 1.5rem;
+
+      &--email {
+        font-size: 1.2rem;
+      }
+
+      &--fb {
+        display: inline-block;
+        padding: 5px 8px 1px;
+        border-radius: 3px;
+        background-color: #1287bf;
+        color: #fff;
+      }
+    }
+
+    &__text {}
+
+  }
+
+  .divider {
+    border: 0;
+    width: 1px;
+    background-color: $gray-light ;
+  }
+}

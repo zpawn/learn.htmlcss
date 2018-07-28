@@ -1,0 +1,23 @@
+/** Color schema */
+$gray-lightest: #f1f1f1;
+$gray-light: #cecece;
+$gray: #828282;
+$gray-dark: #424242;
+$gray-darkest: #2a2a2a;
+
+$yellow: #f8cd53;
+
+$red-light: #f35e59;
+$red: #de2b24;
+$red-dark: #dd2a24;
+
+/** Screen */
+$width-container: 1024px;
+
+/** Font */
+$font-size-base: 16px;
+$font-family-base: 'helvetica-neue-regular';
+$font-family-bold: 'helvetica-neue-bold';
+$font-family-light: 'helvetica-neue-light';
+$font-family-steps:  'georgia-bold';
+$font-color: $gray-darkest;

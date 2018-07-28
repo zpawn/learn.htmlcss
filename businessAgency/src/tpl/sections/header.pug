@@ -1,0 +1,22 @@
+header.header
+    .header__contacts
+        .container
+            ul.contacts
+                li.contacts__item
+                    a(href='tel:+380999999999').contact
+                        i.fa.fa-mobile.contact__icon(aria-hidden='true')
+                        span.contact__text 099 999 9999
+                li.contacts__item.divider
+                li.contacts__item
+                    a(href='mailto:info@buisness.co').contact
+                        i.fa.fa-envelope.contact__icon.contact__icon--email(aria-hidden='true')
+                        span.contact__text info@buisness.co
+                li.contacts__item
+                    a(href='//facebook.com').contact
+                        i.fa.fa-facebook.contact__icon.contact__icon--fb(aria-hidden='true')
+
+    .container
+        .header__navigation
+            .logo: img.logo_picture(src='images/logo.png' alt='Business Agency')
+            include ../components/nav
+            a.button.header__button.button--red(href='#') Free Consultation

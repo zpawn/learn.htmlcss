@@ -1,0 +1,19 @@
+$link-color: $gray-dark;
+
+.header {
+  &__contacts {
+    background-color: $gray-lightest;
+    border-bottom: 1px solid $gray-light;
+  }
+
+  &__navigation {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 41px 0 32px;
+  }
+}
+
+@import './contacts';
+@import './navigation';

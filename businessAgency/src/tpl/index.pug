@@ -1,17 +1,4 @@
 extends layout/base
 
 block content
-    h1 Hello World!
-
-    hr
-
-    form(name='loginForm' id='loginForm')
-        label Email:
-            input(type='text' name='email')
-        label Password:
-            input(type='password' name='password')
-        button(type='submit') Submit
-        |&nbsp;
-        a(id='loginFormReset' href='javascript:void(0)') reset link
-        |&nbsp;
-        a(id='loginFormSubmit' href='javascript:void(0)') submit link
+    include sections/header
