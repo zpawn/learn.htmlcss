@@ -1,22 +1,23 @@
-const loginForm = document.forms.loginForm;
+/**
+ * @param {number} x
+ * @return {boolean}
+ */
+const isPalindrome = (x) => {
 
-////
+    if (x < 0) return false;
 
-document.addEventListener('click', (e) => {
-    e.preventDefault();
-    console.log('[click]');
+    if (x >= 0 && x <= 9) return true;
 
-    switch (e.target.id) {
-        case 'loginFormReset':
-            loginForm.reset();
-            break;
-        case 'loginFormSubmit':
-            loginForm.submit();
-            break;
+    const result = x.toString().split('');
+    const revert = [...result].reverse();
+
+    for (let i = 0; i < result.length; i += 1) {
+        if (result[i] !== revert[i]) {
+            return false;
+        }
     }
-});
 
-document.addEventListener('submit', (e) => {
-    e.preventDefault();
-    console.log('[submit]');
-});
+    return true;
+};
+
+console.log(isPalindrome(12321));
