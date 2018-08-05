@@ -1,5 +1,5 @@
-mixin title(title, text)
-    .title.title--with-bottom-line
+mixin title(title, text, withLine)
+    div(class=(withLine !== false) ? 'title title--with-bottom-line' : 'title')
         if title
             h2.title.title__header= title
         if text
